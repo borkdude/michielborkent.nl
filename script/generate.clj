@@ -120,7 +120,7 @@
      [:li "Examples, snippets, toy apps:"
       [:ul
        [:li
-        [:a {:href "https://michielborkent.nl/script/generate.clj"}
+        [:a {:href "https://github/borkdude/michielborkent.nl"}
          "Babashka / bootleg source of this website."]]
        [:li
         [:a {:href "https://github.com/borkdude/immutable-webapp"}
