@@ -222,7 +222,12 @@
       " "
       [:span {:class "text-muted"}
        "(2001-2008)"]
-      ]
+      " - Music: "
+      [:a {:href "https://www.michielborkent.nl/potmwebarchive/www.pictureofthemoon.net/media/mp3/ad"}
+       "Ageless Day"]
+      ", "
+      [:a {:href "https://www.michielborkent.nl/potmwebarchive/www.pictureofthemoon.net/media/mp3/wc"}
+       "Waxing Crescent"]]
      [:li
       [:a {:href "mmm/finalthesis.pdf"}
        "Final Thesis Music\nMind Machine"] ","
