@@ -306,7 +306,7 @@
       });
       }(document, \"script\", \"twitter-wjs\"));"]])
 
-(defn body []
+(def body
   [:body
    [:div.container
     [:div.row
@@ -335,8 +335,7 @@
 
 (defn html []
   ["<!DOCTYPE html>\n"
-   [:html head
-    (body)]])
+   [:html head body]])
 
 (let [index-edn (html)
       index-html (utils/convert-to index-edn :html)]
