@@ -8,12 +8,9 @@
 
 (def jumbotron
   [:div {:class "jumbotron"}
-   [:p {:class "lead"} "Welcome to my home page! "
+   [:p {:class "lead"} "Michiel Borkent."
     [:br]
-    "My name is Michiel Borkent. Software developer and Clojure professional."]
-   [:p {:class "text-muted"} "Welkom op mijn homepagina! "
-    [:br]
-    "Ik ben Michiel Borkent. Software-ontwikkelaar en Clojure professional."]])
+    "Software developer, speaker, Clojure professional."]])
 
 (def business-info
   [:div {:class "panel panel-default"}
@@ -39,12 +36,68 @@
       [:a {:href "cv/cv.pdf"} "Curriculum vitae"]
       [:span {:class "text-muted"} " (10-2016)"]]]]])
 
-(def talks-workshops
+(def open-source
   [:div {:class "panel panel-default"}
    [:div {:class "panel-heading"}
-    [:h3 {:class "panel-title"} "Talks and workshops"]]
+    [:h3 {:class "panel-title"}
+     "Open source projects"]]
    [:div {:class "panel-body"}
     [:ul {:class "list-unstyled"}
+     [:li
+      [:a {:href "https://github.com/borkdude/babashka"}
+       "Babashka"]
+      [:span ": a fast scripting environment for Clojure"]]
+     [:li
+      [:a {:href "https://github.com/borkdude/clj-kondo"}
+       "Clj-kondo"]
+      [:span ": a linter for Clojure that sparks joy"]]
+     [:li
+      [:a {:href "https://github.com/borkdude/sci"}
+       "Small Clojure Interpreter"]]
+     [:li
+      [:a {:href "https://github.com/borkdude/jet"}
+       "Jet"]
+      [:span ": CLI to transform between JSON, EDN and Transit"]]
+     [:li
+      [:a {:href "https://github.com/borkdude/edamame"}
+       "Edamame"]
+      [:span ": configurable EDN/Clojure parser with location metadata"]]
+     [:li
+      [:a {:href "https://github.com/borkdude/re-find"}
+       "Re-find"]
+      [:span ": find functions using spec"]]]]])
+
+(def talks
+  [:div {:class "panel panel-default"}
+   [:div {:class "panel-heading"}
+    [:h3 {:class "panel-title"} "Talks"]]
+   [:div {:class "panel-body"}
+    [:ul {:class "list-unstyled"}
+     [:li "Babashka and the Small Clojure Interpreter: using Clojure in new contexts - "
+      [:a {:href "https://www.youtube.com/watch?v=Nw8aN-nrdEk"} "video"]
+      ", "
+      [:a {:href
+           "https://speakerdeck.com/borkdude/babashka-and-the-small-clojure-interpreter-at-clojured-2020"}
+       "slides"]
+      " and "
+      [:a {:href "https://github.com/borkdude/babashka"} "code"]
+      [:span {:class "text-muted"} " September 27th 2019, ClojuTRE"]]
+     [:li "Clj-kondo: a linter for Clojure that sparks joy - "
+      [:a {:href "https://www.youtube.com/watch?v=MB3vVREkI7s"} "video"]
+      ", "
+      [:a {:href
+           "https://speakerdeck.com/borkdude/clj-kondo-a-linter-for-clojure-code-that-sparks-joy-at-clojutre-2019"}
+       "slides"]
+      [:a {:href "https://github.com/borkdude/clj-kondo"} "code"]
+      [:span {:class "text-muted"} " September 27th 2019, ClojuTRE"]]
+     [:li "Re-find: discover functions with spec - "
+      [:a {:href "https://www.youtube.com/watch?v=Ygrml6tyrq0"} "video"]
+      ", "
+      [:a {:href "https://speakerdeck.com/borkdude/re-find-discover-functions-with-spec"}
+       "slides"]
+      " and "
+      [:a {:href "https://borkdude.github.io/re-find.web/"} "demo"]
+      [:span {:class "text-muted"} " April 6th 2019, Dutch Clojure Days"]]
      [:li "Functional Programming in Practice - "
       [:a {:href "https://github.com/borkdude/fp-hu-may-2016"} "repo and slides"]
       [:span {:class "text-muted"} " May 9th 2016, Hogeschool Utrecht"]]
@@ -94,13 +147,16 @@
       [:span {:class "text-muted"}
        "Jun. 20 2013, Dec. 19 2013, May 5 2014, Hogeschool Arnhem-Nijmegen Netherlands"]]]]])
 
-(def clojure
+(def writings
   [:div {:class "panel panel-default"}
    [:div {:class "panel-heading"}
     [:h3 {:class "panel-title"}
-     "Clojure"]]
+     "Writings"]]
    [:div {:class "panel-body"}
     [:ul {:class "list-unstyled"}
+     [:li
+      [:a {:href "//jaxenter.com/clojure-alternative-java-169315.html"}
+       "Clojure: a mature alternative to Java"]]
      [:li
       [:img {:src "img/dutchflag_14px.jpg"}]
       " "
@@ -108,43 +164,7 @@
        "Artikel in Java\nMagazine januari 2016"]]
      [:li
       [:a {:href "//blog.michielborkent.nl"}
-       "Blog about\nClojure, Clojurescript and Datomic"]]
-     [:li
-      [:img {:src "img/dutchflag_14px.jpg"}]
-      " "
-      [:a {:href "clojurecursus/index.html"}
-       "Clojure\nlesmateriaal"]
-      " "
-      [:span {:class "text-muted"}
-       "(2012-2013)"]]
-     [:li "Examples, snippets, toy apps:"
-      [:ul
-       [:li
-        [:a {:href "https://github.com/borkdude/michielborkent.nl"}
-         "Babashka / bootleg source of this website."]]
-       [:li
-        [:a {:href "https://github.com/borkdude/immutable-webapp"}
-         "Immutable Webapp"] "- app with Reagent front end and Liberator + Datomic backend"]
-       [:li
-        [:a {:href "//twitter.michielborkent.nl"}
-         "Who follows me?"] "(source"
-        [:a {:href "https://github.com/borkdude/who-follows-me"}
-         "here)"]]
-       [:li
-        [:a {:href "http://tictactoe.michielborkent.nl"}
-         "TicTacToe"] "(source"
-        [:a {:href "https://github.com/borkdude/tictactoe"}
-         "here)"]]
-       [:li
-        [:a {:href "//michielborkent.nl/tictactoe-cljs"}
-         "TicTacToe\nin ClojureScript and Om"] "(source"
-        [:a {:href "https://github.com/borkdude/tictactoe-cljs"}
-         "here)"]]
-       [:li
-        [:a {:href "//michielborkent.nl/reagent-drag/"}
-         "Draggable Button in Reagent"] "(source"
-        [:a {:href "https://github.com/borkdude/draggable-button-in-reagent"}
-         "here"] ")"]]]]]])
+       "Blog about\nClojure, Clojurescript and Datomic"]]]]])
 
 (def courses
   [:div {:class "panel panel-default"}
@@ -243,6 +263,13 @@
       :alt "Stackoverflow",
       :title "profile for Michiel Borkent at Stack Overflow, Q&A for professional and enthusiast programmers"}]]])
 
+(def github
+  [:p {:class "text-right"}
+   [:a {:href "//github.com/borkdude"}
+    [:img {:src "//github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+           :width "25%"
+           :alt "View Michiel Borkent's profile on Github"}]]])
+
 (def linked-in
   [:p {:class "text-right"}
    [:a {:href "//nl.linkedin.com/in/michielborkent"}
@@ -282,14 +309,16 @@
       jumbotron
       business-info
       cv
-      talks-workshops
-      clojure
+      open-source
+      talks
+      writings
       courses
       etc]
      [:div.col-md-4
       avatar
+      github
       stackoverflow
-      linked-in
+      #_linked-in
       twitter]]]])
 
 (def head
