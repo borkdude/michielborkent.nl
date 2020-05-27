@@ -8,9 +8,9 @@
 
 (def jumbotron
   [:div {:class "jumbotron"}
-   [:p {:class "lead"} "Michiel Borkent."
+   [:p {:class "lead"} "Michiel Borkent"
     [:br]
-    "Software developer, speaker, Clojure professional."]])
+    "Software developer, speaker, Clojure professional"]])
 
 (def business-info
   [:div {:class "panel panel-default"}
@@ -30,11 +30,9 @@
     [:h3 {:class "panel-title"} "Curriculum vitae"]]
    [:div {:class "panel-body"}
     [:ul {:class "list-unstyled"}
-     [:li [:a {:href "cv/cv-EN.pdf"} "Curriculum vitae (EN)"]
-      [:span {:class "text-muted"} " (10-2016)"]]
+     [:li [:a {:href "cv/cv-EN.pdf"} "Curriculum vitae (EN)"]]
      [:li [:img {:src "img/dutchflag_14px.jpg"}] " "
-      [:a {:href "cv/cv.pdf"} "Curriculum vitae"]
-      [:span {:class "text-muted"} " (10-2016)"]]]]])
+      [:a {:href "cv/cv.pdf"} "Curriculum vitae"]]]]])
 
 (def open-source
   [:div {:class "panel panel-default"}
