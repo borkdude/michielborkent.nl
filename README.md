@@ -1,5 +1,8 @@
 # michielborkent.nl
 
+This repo hosts the code to generate HTML for
+[michielborkent.nl](https://michielborkent.nl).
+
 To generate the index.html page, run:
 
 ``` shell
