@@ -328,7 +328,7 @@
   [:head "\n    "
    [:title "Welkom op de homepagina van Michiel Borkent"]
    [:meta {:charset "utf-8"}]
-   [:meta {:name "viewport" :content "width=device-width, initial-scale=1" }]
+   [:meta {:name "viewport" :content "width=device-width, initial-scale=1"}]
    [:link {:href "css/bootstrap.min.css", :rel "stylesheet"}]
    [:link {:href "css/lavish-bootstrap.css", :rel "stylesheet"}]])
 
