@@ -22,7 +22,7 @@
      [:br]
      [:li [:a {:href "mailto:michielborkent@gmail.com"} "michielborkent@gmail.com"]]
      [:br]
-     [:li "Chamber of Commerce / Kamer van Koophandel: 66357454"]]]])
+     [:li "Netherlands Chamber of Commerce / Kamer van Koophandel: 66357454"]]]])
 
 (def cv
   [:div {:class "panel panel-default"}
