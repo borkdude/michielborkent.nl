@@ -158,8 +158,11 @@
      [:li
       [:img {:src "img/dutchflag_14px.jpg"}]
       " "
+      "Artikel in Java\nMagazine januari 2016"
       [:a {:href "nljug/18_21_Clojure.pdf"}
-       "Artikel in Java\nMagazine januari 2016"]]
+       "PDF"]
+      [:a {:href "https://nljug.org/java-magazine/clojure/"}
+       "HTML"]]
      [:li
       [:a {:href "//blog.michielborkent.nl"}
        "Blog about\nClojure, Clojurescript and Datomic"]]]]])
