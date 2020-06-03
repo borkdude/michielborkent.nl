@@ -159,8 +159,10 @@
       [:img {:src "img/dutchflag_14px.jpg"}]
       " "
       "Artikel in Java\nMagazine januari 2016"
+      ": "
       [:a {:href "nljug/18_21_Clojure.pdf"}
        "PDF"]
+      ", "
       [:a {:href "https://nljug.org/java-magazine/clojure/"}
        "HTML"]]
      [:li
