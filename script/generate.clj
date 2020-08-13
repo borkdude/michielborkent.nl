@@ -71,6 +71,15 @@
     [:h3 {:class "panel-title"} "Talks"]]
    [:div {:class "panel-body"}
     [:ul {:class "list-unstyled"}
+     [:li "Babashka and GraalVM; taking Clojure to new places - "
+      [:a {:href "https://youtu.be/3EUMA6bd-xQ"} "video"]
+      ", "
+      [:a {:href
+           "https://speakerdeck.com/borkdude/babashka-and-graalvm-taking-clojure-to-new-places-at-clojure-nyc-meetup"}
+       "slides"]
+      " and "
+      [:a {:href "https://github.com/borkdude/babashka"} "code"]
+      [:span {:class "text-muted"} " July 11th 2020, Clojure/NYC"]]
      [:li "Babashka and the Small Clojure Interpreter: using Clojure in new contexts - "
       [:a {:href "https://www.youtube.com/watch?v=Nw8aN-nrdEk"} "video"]
       ", "
@@ -79,7 +88,7 @@
        "slides"]
       " and "
       [:a {:href "https://github.com/borkdude/babashka"} "code"]
-      [:span {:class "text-muted"} " September 27th 2019, ClojuTRE"]]
+      [:span {:class "text-muted"} " February 2020, ClojureD, Berlin Germany"]]
      [:li "Clj-kondo: a linter for Clojure that sparks joy - "
       [:a {:href "https://www.youtube.com/watch?v=MB3vVREkI7s"} "video"]
       ", "
@@ -87,7 +96,7 @@
            "https://speakerdeck.com/borkdude/clj-kondo-a-linter-for-clojure-code-that-sparks-joy-at-clojutre-2019"}
        "slides"]
       [:a {:href "https://github.com/borkdude/clj-kondo"} "code"]
-      [:span {:class "text-muted"} " September 27th 2019, ClojuTRE"]]
+      [:span {:class "text-muted"} " September 27th 2019, ClojuTRE, Helsinki Finland"]]
      [:li "Re-find: discover functions with spec - "
       [:a {:href "https://www.youtube.com/watch?v=Ygrml6tyrq0"} "video"]
       ", "
