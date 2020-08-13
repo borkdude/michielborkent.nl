@@ -44,7 +44,7 @@
      [:li
       [:a {:href "https://github.com/borkdude/babashka"}
        "Babashka"]
-      [:span ": a fast scripting environment for Clojure"]]
+      [:span ": a fast-starting scripting environment for Clojure"]]
      [:li
       [:a {:href "https://github.com/borkdude/clj-kondo"}
        "Clj-kondo"]
